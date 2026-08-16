@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add user</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            gap:30px;
+        }
+        label{
+            font-weight: 700;
+        }
+        button{
+            height:30px;
+            width:100px;
+            margin-left: 300px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Your Account</h1>
+    <p>Join a growing community of people building real things</p>
+    <br>
+    <form method="POST" action="/user/add">
+        <div><label >Username:</label>
+        <input type="text" name="username" placeholder="username"><br>
+        </div>
+        <div><label >Email:</label>
+        <input type="text" name="email" placeholder="email"><br></div>
+        <div><label >Password:</label>
+        <input type="password" name="password" placeholder="password"><br></div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
